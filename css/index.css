@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500&family=Russo+One&family=Cabin+Condensed:wght@400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*Hero Section*/
+.hero {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url('img/main_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero-title {
+      font-size: 5vw;
+      letter-spacing: 5vw;
+      text-transform: uppercase;
+      text-align: center;
+      font-family:'Lobster Two', cursive;
+      font-weight: 400;
+      display: flex;
+      flex-direction: row;
+}
+
+.hero-title-1 {
+      color:rgb(1, 174, 1);
+}
+
+.hero-title-2 {
+      color: white;
+}
+
+.hero-title-3 {
+      color:red;
+}
+
+.hero-quote {
+      margin-top: 2rem;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 1.5vw;
+    color: #fff39a;
+    width: 50vw;
+    text-align: center;
+}
