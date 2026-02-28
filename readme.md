@@ -1,7 +1,7 @@
 # Atestat despre turismul din Italia.
 
 ## Subiectele care vor fi abordate:
-- o scurta descriere a Italiei >(Home)<br/>
-- obiective turistice si locatii >(Locations) (https://www.eturia.ro/italia/atractii)<br/>
-- cum se incurajeaza turismul in Italia >(Policies)br/>
-- planificari pentru un sejur in Italia >(Planning)(https://www.italia.it/en/italy/practical-information)<br/>
+* o scurta descriere a Italiei >(Home)
+* obiective turistice si locatii >(Locations) ([From](https://www.eturia.ro/italia/atractii)) 
+* cum se incurajeaza turismul in Italia >(Policies)
+* planificari pentru un sejur in Italia >(Planning)([From](https://www.italia.it/en/italy/practical-information))
