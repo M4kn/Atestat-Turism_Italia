@@ -91,9 +91,15 @@ p {
 }
 
 .section {
-      margin: 5vw 2.5vw;
-      padding: 5vw 2.5vw;
-      background-color: rgba(245, 245, 245,0.5);
+    margin: 5vw 2.5vw;
+    padding: 5vw 2.5vw;
+    background: radial-gradient(ellipse at center, 
+        rgba(245, 245, 245, 0.7) 0%,
+        rgba(245, 245, 245, 0.5) 50%,
+        rgba(245, 245, 245, 0.4) 75%,
+        rgba(245, 245, 245, 0.1) 100%
+    );
+    border-radius: 15px 50px;
 }
 
 /*Italy color for text*/
