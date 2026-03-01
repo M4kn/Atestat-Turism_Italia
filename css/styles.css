@@ -90,6 +90,12 @@ p {
       line-height: 1.5vw;
 }
 
+.section {
+      margin: 5vw 2.5vw;
+      padding: 5vw 2.5vw;
+      background-color: rgba(245, 245, 245,0.5);
+}
+
 /*Italy color for text*/
 .it {
       text-align: center;
