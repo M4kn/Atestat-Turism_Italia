@@ -1,67 +1,277 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500&family=Russo+One&family=Cabin+Condensed:wght@400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
-/*Hero Section*/
+/* Hero Section */
 .hero {
-    background-color: rgba(0, 0, 0, 0.4);
-    background-image: url('img/main_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 4px 4px 5px #000;
-}
-
-
-.hero-title {
-      font-size: 5vw;
-      letter-spacing: 5vw;
-      text-transform: uppercase;
-      text-align: center;
-      font-family:'Lobster Two', cursive;
-      font-weight: 400;
-      display: flex;
-      flex-direction: row;
-}
-
-.hero-quote {
-      margin-top: 2rem;
-      font-family: 'Crimson Text', serif;
-      font-style: italic;
-      font-size: 1.5vw;
-      color: #fff39a;
-      width: 50vw;
-      text-align: center;
-}
-
-/*Main section*/
-.welcome {
+      height: 100vh;
       display: flex;
       justify-content: center;
-      padding-bottom: 1vw;
-      font-size: 2.5vw;
-      font-family: 'Crimson Text', serif;
-      letter-spacing: 1px;
+      align-items: center;
+      position: relative;
+      background-attachment: fixed;
+      background-size: cover;
 }
 
-#made_by {
-      font-size: 1.5vw;
-      font-style: italic;
+.hero-title {
+      display: flex;
+      gap: 15px;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 8vw;
+      font-weight: 900;
+}
+
+.it-1 {
+      color: var(--it-green);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.it-2 {
+      color: var(--it-white);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.it-3 {
+      color: var(--it-red);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-quote h2 {
       font-family: 'Crimson Text', serif;
-      font-weight: 600;
-      line-height: 35px;
+      font-style: italic;
+      font-size: 1.8vw;
+      color: #fff;
+      max-width: 50vw;
+      margin: 20px auto;
+      font-weight: 400;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Content Section */
+.content {
+      margin-top: -100px;
+      border-radius: 120px 0 0 0;
+      position: relative;
+      z-index: 10;
+      padding: 120px 15% 60px;
+      background-color: #f4eee1;
+      background-image:
+            radial-gradient(at 0% 0%, rgba(79, 121, 66, 0.15) 0%, transparent 50%),
+            radial-gradient(at 100% 100%, rgba(188, 108, 37, 0.15) 0%, transparent 50%),
+            url('https://www.transparenttextures.com/patterns/natural-paper.png');
+      box-shadow:
+            inset 0 0 100px rgba(255, 255, 255, 0.5),
+            0 -20px 50px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.welcome {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3.5rem;
+      color: var(--text-dark);
+      margin-bottom: 40px;
+      text-align: left;
+      border-bottom: 1px solid var(--accent-terracotta);
+      display: inline-block;
+      padding-bottom: 10px;
+}
+
+.about {
+      font-size: 1.3rem;
+      color: #444;
+      column-count: 2;
+      column-gap: 40px;
+      text-align: justify;
+}
+
+/* Info Box */
+.info-box {
+      margin-top: 60px;
+      background: transparent;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 30px;
+}
+
+.made_by_text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-terracotta);
+      margin-bottom: 8px;
+      text-indent: 0;
 }
 
 .space {
-      padding-bottom: 100vh;
+      padding-bottom: 15vh;
+}
+
+/* Grila de Categorii */
+.home-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin: 80px 0;
+}
+
+.category-card {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      transition: transform 0.4s ease;
+      border: 1px solid #f0f0f0;
+}
+
+.category-card:hover {
+      transform: translateY(-15px);
+}
+
+.card-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+      border-radius: 2px;
+}
+
+.category-card h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+}
+
+.category-card p {
+      font-size: 1rem;
+      text-indent: 0;
+      color: #666;
+      margin-bottom: 20px;
+}
+
+.read-more {
+      text-decoration: none;
+      color: var(--accent-terracotta);
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+}
+
+/* Trivia Section */
+.trivia-minimal {
+      padding: 120px 15%;
+      background-color: transparent;
+      background-color: #e8ede3;
+      background-image:
+            url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      background-blend-mode: overlay;
+
+}
+
+.trivia-container-min {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 60px;
+      margin-top: 60px;
+}
+
+.trivia-item {
+      padding-top: 20px;
+      position: relative;
+      transition: opacity 0.3s ease;
+}
+
+.trivia-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background-color: var(--text-dark);
+}
+
+.item-green::before {
+      background-color: var(--it-green);
+      width: 60px;
+      height: 2px;
+}
+
+.item-white::before {
+      background-color: #d1d1d1;
+      width: 60px;
+      height: 2px;
+}
+
+.item-red::before {
+      background-color: var(--it-red);
+      width: 60px;
+      height: 2px;
+}
+
+.trivia-number {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #bc6c25;
+      margin-bottom: 15px;
+      opacity: 0.6;
+}
+
+.trivia-item h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.2rem;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+}
+
+.trivia-item p {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #666;
+      text-align: left;
+      text-indent: 0;
+}
+
+.trivia-item:hover {
+      opacity: 0.8;
+}
+
+/* Call to Action Final */
+.home-cta {
+      text-align: center;
+      padding: 100px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.home-cta h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+}
+
+.home-cta p {
+      text-align: center;
+      text-indent: 0;
+      margin-bottom: 40px;
+}
+
+.cta-button {
+      background-color: var(--text-dark);
+      color: white;
+      padding: 18px 45px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+}
+
+.cta-button:hover {
+      background-color: var(--accent-olive);
+      box-shadow: 0 10px 20px rgba(79, 121, 66, 0.2);
 }
