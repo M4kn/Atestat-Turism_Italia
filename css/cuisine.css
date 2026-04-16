@@ -19,7 +19,6 @@
       text-indent: 0;
 }
 
-/* Containerul de preparate */
 .dish-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -36,7 +35,6 @@
       animation: fadeIn 0.8s forwards;
 }
 
-/* Efectul de alternare (imagine dreapta) */
 .dish-item.reverse {
       flex-direction: row-reverse;
 }
@@ -81,7 +79,6 @@
       text-align: left;
 }
 
-/* Animație simplă de apariție */
 @keyframes fadeIn {
       to {
             opacity: 1;
@@ -89,7 +86,7 @@
       }
 }
 
-/* Responsivitate */
+/* Responsiveness */
 @media (max-width: 900px) {
 
       .dish-item,
