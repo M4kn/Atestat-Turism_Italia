@@ -1,0 +1,75 @@
+.planning-page {
+    background-color: #fcfaf7;
+    padding-bottom: 100px;
+}
+
+.planning-header {
+    padding: 180px 15% 80px;
+    text-align: left;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    margin-left: 15%;
+}
+
+.planning-subtitle {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #7a736d;
+    max-width: 600px;
+    margin-top: 20px;
+    text-indent: 0;
+}
+
+/* Structura pașilor */
+.planning-steps {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 5%;
+}
+
+.step-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: flex-start;
+}
+
+.step-number {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--it-red);
+    opacity: 0.2;
+    flex-shrink: 0;
+    width: 100px;
+}
+
+.step-info h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--accent-terracotta);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.step-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    text-indent: 0;
+    text-align: left;
+}
+
+/* REsponsiveness */
+@media (max-width: 700px) {
+    .step-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .planning-header {
+        margin-left: 5%;
+        padding-top: 150px;
+    }
+}
