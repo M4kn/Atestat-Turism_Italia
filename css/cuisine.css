@@ -1,0 +1,105 @@
+.cuisine-page {
+      background-color: #fcfaf7;
+      padding-bottom: 100px;
+}
+
+.cuisine-header {
+      padding: 180px 15% 80px;
+      text-align: center;
+      background-image: radial-gradient(at 50% 0%, rgba(188, 108, 37, 0.05) 0%, transparent 70%);
+}
+
+.cuisine-subtitle {
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #666;
+      max-width: 800px;
+      margin: 20px auto 0;
+      text-indent: 0;
+}
+
+/* Containerul de preparate */
+.dish-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 5%;
+}
+
+.dish-item {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      margin-bottom: 120px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 0.8s forwards;
+}
+
+/* Efectul de alternare (imagine dreapta) */
+.dish-item.reverse {
+      flex-direction: row-reverse;
+}
+
+.dish-image {
+      flex: 1;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 20px 20px 0px rgba(188, 108, 37, 0.05);
+      /* Umbră stilizată tip offset */
+      border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dish-text {
+      flex: 1;
+}
+
+.dish-region {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--it-red);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 15px;
+}
+
+.dish-text h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 2.5rem;
+      color: var(--text-dark);
+      margin-bottom: 25px;
+}
+
+.dish-text p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      text-indent: 0;
+      text-align: left;
+}
+
+/* Animație simplă de apariție */
+@keyframes fadeIn {
+      to {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+/* Responsivitate */
+@media (max-width: 900px) {
+
+      .dish-item,
+      .dish-item.reverse {
+            flex-direction: column;
+            gap: 40px;
+      }
+
+      .dish-image {
+            width: 100%;
+            height: 350px;
+      }
+}
