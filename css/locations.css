@@ -113,7 +113,6 @@ body {
       justify-content: center;
       align-items: center;
       background-color: #fdf6ed;
-      /* Fundal ușor diferit pentru spate */
       border: 2px solid var(--accent-terracotta);
 }
 
