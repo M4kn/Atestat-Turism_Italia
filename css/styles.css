@@ -5,6 +5,8 @@
       --it-white: #FFFFFF;
       --it-red: #A62C2B;
       --nav-black: rgba(15, 15, 15, 0.85);
+      --text-dark: #1a1a1a; /* Adăugat */
+      --bg-ivory: #fdfcf0;
 }
 
 * {
