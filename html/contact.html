@@ -1,47 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Italia</title>
-      <link rel="stylesheet" href="../css/styles.css">
-      <link rel="stylesheet" href="../css/contact.css">
-</head>
-<body>
-      <header>
-            <nav>
-                  <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="cuisine.html">Cuisine</a></li>
-                        <li><a href="policies.html">Policies</a></li>
-                        <li><a href="planning.html">Planning</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                  <div class="social-icons">
-                        <a href="#" class="social-icon-link">
-                              <img
-                              src="../img/facebook.png"
-                              alt="Facebook"
-                              class="social-icon-img"
-                              />
-                        </a>
-                        <a href="#" class="social-icon-link">
-                              <img
-                              src="../img/twitter.png"
-                              alt="Twitter"
-                              class="social-icon-img"
-                              />
-                        </a>
-                        <a href="#" class="social-icon-link">
-                              <img
-                              src="../img/instagram.png"
-                              alt="Instagram"
-                              class="social-icon-img"
-                              />
-                        </a>
-                  </div>
-            </nav>
-      </header>
-</body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Italia</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../img/icons/favicon-italia.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="locations.html">Locații</a></li>
+          <li><a href="cuisine.html">Gastronomie</a></li>
+          <li><a href="policies.html">Politici</a></li>
+          <li><a href="planning.html">Planificare</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon-link"
+            ><img
+              src="../img/icons/facebook.png"
+              alt="Facebook"
+              class="social-icon-img"
+          /></a>
+          <a href="#" class="social-icon-link"
+            ><img
+              src="../img/icons/twitter.png"
+              alt="Twitter"
+              class="social-icon-img"
+          /></a>
+          <a href="#" class="social-icon-link"
+            ><img
+              src="../img/icons/instagram.png"
+              alt="Instagram"
+              class="social-icon-img"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <section class="contact-header">
+        <h1 class="page-title">Contactează-ne</h1>
+        <p class="contact-subtitle">
+          Suntem aici pentru a te ajuta să îți transformi călătoria de vis în
+          realitate. Trimite-ne un mesaj sau vizitează-ne la sediul nostru.
+        </p>
+      </section>
+
+      <section class="contact-container">
+        <!-- Information -->
+        <div class="contact-info">
+          <div class="info-item">
+            <h3>Sediul Nostru</h3>
+            <p>Via della Conciliazione, 4<br />00193 Roma, RM, Italia</p>
+          </div>
+          <div class="info-item">
+            <h3>Contact Rapid</h3>
+            <p>Email: info@italiatourism.it<br />Telefon: +39 06 123 4567</p>
+          </div>
+          <div class="info-item">
+            <h3>Program</h3>
+            <p>Luni - Vineri: 09:00 - 18:00<br />Sâmbătă: 10:00 - 14:00</p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nume Complet</label>
+              <input type="text" id="name" placeholder="Ex: Popescu Andrei" />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresă de Email</label>
+              <input type="email" id="email" placeholder="nume@exemplu.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mesajul Tău</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Cum te putem ajuta?"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Trimite Mesajul</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-logo">
+            <span class="it-1">IT</span><span class="it-2">AL</span
+            ><span class="it-3">IA</span>
+          </h3>
+        </div>
+        <div class="footer-section">
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="locations.html">Locații</a></li>
+            <li><a href="cuisine.html">Gastronomie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><img src="../img/icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="../img/icons/twitter.png" alt="Twitter" /></a>
+          <a href="#"
+            ><img src="../img/icons/instagram.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Italia Tourism. Creat de <span>Alexe Daria</span>.</p>
+      </div>
+    </footer>
+  </body>
 </html>
